@@ -6,6 +6,7 @@ const routes= {
     login: "/Pagina_Web/login",
     identidy: "/valideIdentidy",
     changePassword: "/recover",
+    zonaCentro: "/Pagina_Web/zona-centro",
     notFound: "*",
 
 // Secciones 
