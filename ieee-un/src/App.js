@@ -6,6 +6,7 @@ import routes from './Helpers/routes'
 import LandingPage from './Pages/LandingPage';
 import Chapter from './Pages/Chapter';
 import ChapterDetails from './Pages/ChapterDetails';
+import ZonaCentro from './Pages/ZonaCentro';
 import Login from './Pages/Login';
 import NotFound404 from './Pages/NotFound404';
 
@@ -28,6 +29,7 @@ export default function App() {
         <Route path={routes.identidy} element={<ValidateUser />} />
         <Route path={routes.changePassword} element={<ChangePassword />} />
         <Route path={routes.chapter} element={<Chapter />} />
+        <Route path={routes.zonaCentro} element={<ZonaCentro />} />
         <Route
           exact
           strict
