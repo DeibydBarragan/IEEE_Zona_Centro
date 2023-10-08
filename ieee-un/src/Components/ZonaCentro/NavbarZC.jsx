@@ -15,9 +15,9 @@ export default  function NavbarZC() {
   ];
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar-zc d-flex" sticky="top">
+    <Navbar collapseOnSelect expand="lg" className="navbar-zc d-flex" id="navbar" sticky="top">
       <Container className="d-flex">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#">
           <img
             src={icon}
             alt="logo Zona Centro"
