@@ -1,9 +1,13 @@
 import React from "react";
-import heroImage from "../../../Assets/zonaCentro/landing/hero.jpeg";
+import heroImage from "../../../Assets/zonaCentro/landing/hero.jpeg"
+import "../../../Styles/ZonaCentro.sass"
+import {Button} from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import AOS from 'aos';
 export default  function HeroZC() {
   return (
-    <div className="hero-zc row align-items-center">
-      <div className="d-flex flex-column col-6 ps-5 bg-primary">
+    <section className="hero-zc d-flex align-items-center pb-5" id="hero">
+      <Col className="data-container d-flex flex-column col-6">
         <h1 className="fw-bold text-white">
           !Te invitamos a participar en la próxima edición de la Zona Centro de IEEE!
         </h1>
@@ -11,17 +15,17 @@ export default  function HeroZC() {
           Acompáñanos a esta reunión, organizada por la sección de la rama de la Universidad Nacional de Colombia. Donde podrás aprender cosas nuevas, participar en actividades, conocer y compartir con otros integrantes de la rama, y mucho más
         </p>
         <div className="d-flex gap-3">
-          <button className="btn btn-danger">
+          <Button>
             Inscríbete
-          </button>
-          <button className="btn btn-outline-danger">
+          </Button>
+          <Button variant="outline-primary">
             Más información
-          </button>
+          </Button>
         </div>
-      </div>
-      <div className="bg-black col-6">
-        {/*<img src={ heroImage } alt="Evento Zona Centro" />*/}
-      </div>
-    </div>
+      </Col>
+      <Col className="col-6">
+        <img src={ heroImage } alt="Evento Zona Centro" />
+      </Col>
+    </section>
   );
 }
