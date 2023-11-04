@@ -65,3 +65,49 @@ $xxl: 1400px
     p
       color: $p-color
       font-weight: 200
+
+//Registration form section
+.registration-form
+  min-height: 90vh
+  h2
+    font-size: 3.0rem
+    font-weight: bold
+    color: $zonac-color-b
+  .form-container
+    background: linear-gradient(to bottom right, $zonac-color-b, $zonac-color-e)
+    border-radius: 30px 0 30px 30px
+    position: relative
+    &::before
+      content: ""
+      z-index: -1
+      position: absolute
+      top: 2rem
+      left: 2rem
+      width: 100%
+      height: 100%
+      background: linear-gradient($zonac-color-e, $zonac-color-b)
+      border-radius: 30px 30px 30px 0
+    button
+      font-weight: bold
+      width: fit-content
+      border-color: white
+      margin-right: 5px
+      &:hover
+        background-color: white
+        color: $zonac-color-a
+
+  .count-down
+    width: fit-content
+    h3
+      font-size: 2.5rem
+      font-weight: bold
+      color: $zonac-color-b
+.toast-success
+  border-color: $zonac-color-a
+  strong
+      color: $zonac-color-a
+.toast-error
+  border-color: red
+  strong
+    color: red
+
