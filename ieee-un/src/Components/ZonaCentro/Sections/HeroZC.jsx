@@ -16,7 +16,7 @@ export default  function HeroZC() {
             Acompáñanos a esta reunión, organizada por la sección de la rama de la Universidad Nacional de Colombia. Donde podrás aprender cosas nuevas, participar en actividades, conocer y compartir con otros integrantes de la rama, y mucho más
           </p>
           <div className="d-flex gap-3">
-            <a href="#form" className="btn btn-primary">
+            <a href="#registrationForm" className="btn btn-primary">
               Inscríbete
             </a>
             <a href="#info" className="btn btn-outline-primary">
