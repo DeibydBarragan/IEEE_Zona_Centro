@@ -1,0 +1,160 @@
+$red-calendar:#F75555
+$xs: 0,
+$sm: 576px,
+$md: 768px,
+$lg: 992px,
+$xl: 1200px,
+$xxl: 1400px
+
+@media (max-width: $lg)
+	.calendar-main-container
+		padding-top: 50px
+		border: none !important
+		position: relative !important
+		width: 100vw !important
+		font-size: 10pt !important
+		flex-direction: column
+		height: fit-content
+	.info-container
+		order: 2 !important
+	.calendar
+		padding-bottom: 50px
+
+#calendar
+	position: relative
+	left: 0vw
+	top: 0vh
+	width: 80%
+	display: block
+	margin: auto
+
+.view-cap, .view-container-border
+	background-color: #ffffff !important
+
+
+.calendar
+	scale: 1.5 !important
+	position: relative
+	font-weight: 800 
+	display: grid
+	width: fit-content
+	grid-template-columns: repeat(7, 50px)
+	grid-template-rows: repeat(7, 50px)
+	height: fit-content !important 
+	grid-column-gap: 28px
+	grid-row-gap: 3px
+	
+
+.item
+	width: 100%
+	height: 100%
+	font-size: 20pt
+	border-radius: 15px
+	display: flex
+	flex-direction: column
+	text-align: center
+	justify-content: center
+	vertical-align: center
+	transition: .1s ease-out
+	background: white	
+	cursor: pointer
+	position: relative
+
+	p.events-badge
+		font-size: 2pt
+		position: absolute
+		bottom: 100px
+
+.circle-indicator
+	background: red
+	display: block
+	width: 5px
+	height: 5px
+	border-radius: 100%	
+	left: 0px
+	right: 0px
+	margin-left: 1px
+	margin-right: 1px
+	
+
+.item.no-selectable
+	background: white !important
+	font-size: 16pt !important 
+	font-weight:600
+
+	
+.item:hover:not(.no-selectable)
+	background: $red-calendar
+	color: white
+	transition: .1s ease-in
+
+.info-container
+	background: #0D1839
+	color: white
+	// padding-top: 10%
+	h1
+		font-weight: 800
+		line-height: 25pt
+	h5
+		font-weight: 400
+
+.calendar-main-container
+	border: grey solid 3px
+	max-height: fit-content !important
+	min-height: 75%
+
+span.active
+	background: white
+.item.active
+	background: $red-calendar
+	color: white
+
+.month-title
+	display:block
+	position:relative
+	font-weight: 700
+	margin: auto
+	left: 20px
+	font-size: 32pt
+	text-align: left
+	width: 85%
+	margin: auto
+
+
+.btns-container
+	bottom: 0px
+	right: 0px
+	margin: 20px
+	button
+		border: none
+		background: transparent 
+	button:hover
+		font-weight: 800
+
+.event-container
+	position: relative
+	cursor: pointer
+
+	.event-name
+		font-size: 18pt
+		font-weight: 400
+		line-height: 18pt
+	.event-chapter
+		font-size: 13pt
+		font-weight: 400
+		line-height: 13pt
+	.event-hour
+		font-size: 12pt
+		font-weight: 300
+		line-height: 10pt
+	span.line-event-decorator
+		position: absolute
+		display: block
+		width: 2px
+		height: 0
+		right: 0
+		background: white
+
+.event-container:hover > span
+	height: 100%
+	

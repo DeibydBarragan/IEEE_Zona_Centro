@@ -1,0 +1,337 @@
+// LandingPage.js style sheet 
+@import "app.sass"
+
+.bg-img
+	background-size: cover
+	background-repeat: no-repeat
+	position: absolute
+	top: 0
+	right: 0
+	width: 55vw
+	height: 100vh
+	z-index: 3
+
+.section-1
+	/* background: linear-gradient($primary-color, $secondary-bg-color)*/ 
+	position: relative
+	height: 100vh
+	color: white 
+	overflow-x: hidden
+	overflow-y: hidden
+
+.section-2
+	overflow-x: hidden !important
+	margin: auto
+	margin-left: -10%
+	left: 0px
+	right: 0px
+	height: 50px
+	/*background-color: #070C20 */
+	border-radius: 50%/100%
+	border-top-left-radius: 0
+	border-top-right-radius: 0
+	border-bottom: 0
+
+.section-3
+	min-height: 100vh
+	height: fit-content
+	display: block
+	position: relative
+
+.full-height
+		height: 100vh !important 
+
+.full-width
+	width: 100%
+
+.full
+	@extend .full-height
+	@extend .full-width
+
+.carrousel-container
+	background: red
+
+.section-extension-1
+	width: 100%
+	height: 180px
+	background-color: $secondary-bg-color
+
+.section-extension-2
+	width: 120%
+	margin: auto
+	margin-left: -10% 
+	left: 0px
+	right: 0px
+	
+	height: 290px
+	background-color: $secondary-bg-color
+
+	border-radius: 50% / 100%	
+	border-top-left-radius: 0
+	border-top-right-radius: 0
+	
+	border-bottom: 0
+
+.title
+	font-weight: 900
+	line-height: 72pt
+	z-index: 200
+
+.ver-mas
+	background: transparent
+	color: white
+	cursor: pointer
+	border: solid white 7px
+	border-radius: 15px
+	padding: 10px 70px 10px 70px
+	text-decoration: none
+	&:hover
+		background: white
+		color: $primary-color
+		animation: background 0.5s, color 0.5s ease-out both
+
+.quienes-somos-container
+	position: relative
+	min-height:80vh
+	height: fit-content
+	width: 55%
+	margin: auto
+	top: 0
+	vertical-align: center
+	bottom: 0
+	left: 0
+	right: 0
+	text-align: center
+
+	h1
+		font-weight: 700 
+	p
+		font-size: 14pt
+		margin-top: 50px
+	
+
+.data-container
+	height: fit-content
+	display: block
+	.a
+		font-weight: 900
+		font-size: 32pt
+		line-height: 0px
+
+	.b 
+		font-weight: 300
+		line-height: 0px
+		margin-left: 10px
+
+.heroSection
+	display: flex
+	flex-direction: row
+	align-items: center
+	align-content: center
+
+.heroSection-text 
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+.team-div		
+	margin: auto
+	position: relative
+	width: fit-content
+
+.subtitle-team
+	font-size: 14pt
+
+img.team-icon
+	width: 180px
+	
+.card-container-team
+	margin-top: 0px !important
+	background: $gray-color
+	position: relative
+	top: 0px !important
+	width: 100%
+	height: fit-content
+	z-index: 20
+
+.team-title
+	white-space: nowrap
+	font-size: 20pt
+	font-weight: 900
+
+$xs: 0,
+$sm: 576px,
+$md: 768px,
+$lg: 992px,
+$xl: 1200px,
+$xxl: 1400px
+
+@media (max-width: $md)
+	.team-title
+		text-align: center
+		font-size: 1.2em
+		white-space: normal
+
+	img.team-icon
+		width: 140px
+
+.line-title
+	display: block
+	width: 100px	
+	height: 5px
+	background: $primary-color
+	margin: auto
+
+.title-landing-container
+	left: -10% !important
+	
+.title-container
+	font-weight: black
+	font-size: 36pt
+
+.arrow-up 
+	border-left: 47vw  solid transparent
+	border-right: 50vw  solid transparent
+	border-bottom: 20vh  solid $gray-color
+	margin-top: -100px
+	z-index: 2
+
+.arrow-down
+	border-left: 47vw  solid transparent
+	border-right: 47vw  solid transparent
+	border-top: 20vh  solid $gray-color
+	z-index: 2
+	
+@media (min-width: 992px)
+	.title
+		font-size: 64pt
+		text-align: left
+
+	.ver-mas
+		margin-top: 20px
+		font-weight: 700
+	
+	.owl-sm
+		display: none
+
+	.owl
+		width: 150%
+		height: 100vh
+		margin-top: -75px
+		margin-left: -50px
+
+
+	.cards-container
+		width: 200px
+		height: 200px 
+		
+		width: 90%
+		margin: auto
+		position: absolute
+		
+		left: 0
+		right: 0
+		margin-top: -200px
+		
+	.center-div
+		position: absolute
+		left: 0 !important
+		background: blue
+		right: 0 !important
+
+	.test-color
+		background: red
+
+	.w-fc
+		min-width: 20px
+		width: 45%
+
+	.team-icon
+		width: 110px !important
+
+	.height-fc
+
+		min-height: 100vh
+		height: fit-content !important
+
+	.footer
+		background: $secondary-bg-color 
+		height: fit-content
+		bottom: 0
+		left: 0px
+		z-index: 90
+		width: 100%
+
+		color: white
+
+		div	
+			font-weight: 600
+
+	.heroSection-text 
+		margin-left: 120px
+		width: 50%
+		margin-top: 28vh
+
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.owl
+		width: 900%
+		height: 100vh
+		margin-left: -280px
+
+	.title
+		font-size: 62pt !important
+		display: block 
+		line-height: 62pt
+		width: 80vw
+		z-index: 2000000
+
+	.owl-sm
+		display: block !important
+		opacity: 0.4
+
+	.ver-mas
+		margin-top: 20px
+		font-weight: 700
+
+	.heroSection-text 
+		margin-left: 75px
+		margin-top: 45vh
+
+
+@media (max-width: 768px)
+	.title
+		font-size: 40pt !important
+		display: block
+		line-height: 40pt
+		width: 80vw
+		text-align: center
+
+	.owl
+		width: 1700%
+		margin-left: -250px
+	
+	.heroSection
+		display: flex
+		flex-direction: row
+		align-items: center
+		align-content: center
+
+	.heroSection-text
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-left: 40px
+		margin-top: 35vh
+
+.game-responsive
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	padding: 15px
+	box-sizing: border-box
